@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.15.2",
     "bootstrap": "^5.3.8",
+    "cross-env": "^10.1.0",
     "react": "^19.2.5",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.5",
@@ -17,10 +18,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node node_modules/react-scripts/scripts/start.js",
-    "build": "node node_modules/react-scripts/scripts/build.js",
-    "test": "node node_modules/react-scripts/scripts/test.js",
-    "eject": "node node_modules/react-scripts/scripts/eject.js"
+    "start": "cross-env BROWSER=none node node_modules/react-scripts/scripts/start.js",
+    "build": "cross-env BROWSER=none node node_modules/react-scripts/scripts/build.js",
+    "test": "cross-env BROWSER=none node node_modules/react-scripts/scripts/test.js",
+    "eject": "cross-env BROWSER=none node node_modules/react-scripts/scripts/eject.js"
   },
   "eslintConfig": {
     "extends": [
